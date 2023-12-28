@@ -1,13 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
-const propertyTypes = ["Buy", "Rent", "Plot"];
 import Searchbar from "./searchbar";
+const propertyTypes = ["Buy", "Rent", "Plot"];
 const HomeSearch = () => {
   const [selectedType, setSelectedType] = useState(propertyTypes[0]);
-
   return (
-    <div className="h-screen w-screen border-2 grid grid-cols-[1.5fr_2fr] gap-2 px-20 ">
+    <div className="h-screen w-screen border-2 grid grid-cols-[1.1fr_2fr] gap-2 px-20 ">
       <div className="flex items-center justify-center">
         <Image
           src={"/home-search.svg"}
@@ -40,6 +39,17 @@ const HomeSearch = () => {
             ))}
           </div>
           <Searchbar />
+
+          <div>
+            <h3 className="text-[34px] font-medium text-slate-600">
+              <p className="text-green-600 inline">10K + </p> Active User
+            </h3>
+            <p className="text-[24px] text-slate-500">
+              Join our vibrant online community of 10k active users today.
+              Discover endless possibilities, connect, and share experiences
+              like never before.
+            </p>
+          </div>
         </div>
       </div>
     </div>
