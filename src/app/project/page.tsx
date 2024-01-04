@@ -12,7 +12,7 @@ export default function page() {
       <Spec />
       <Banner />
       <Feature />
-      <Why />
+      {/* <Why /> */}
       <Reviews />
     </div>
   );

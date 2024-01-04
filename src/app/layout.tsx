@@ -4,6 +4,7 @@ import "./globals.css";
 import "@mantine/core/styles.css";
 import { MantineProvider, ColorSchemeScript } from "@mantine/core";
 import { theme } from "@/lib/theme";
+import "@mantine/carousel/styles.css";
 import Header from "@/components/layouts/primary/header";
 export const metadata: Metadata = {
   title: "Create Next App",
